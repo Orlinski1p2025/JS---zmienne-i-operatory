@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="test"></p>
+    <script>
+  //Zadanie 7 (4 pkt)
+//Napisz kod, który:
+//●	Tworzy zmienną 'cena' z wartością 100
+//●	Tworzy stałą 'RABAT' z wartością 0.15 (15%)
+//●	Oblicza cenę po rabacie (cena - cena * RABAT)
+//●	Wyświetla cenę przed i po rabacie używając template literals
+ // Napisz kod tutaj: 
+ document.write("Zad.7<br/>");
+ let cena= 100;
+ const RABAT=0.15;
+ document.write("cena przed rabatem: " + cena + "<br/>");
+ let cena2=cena - cena * RABAT;
+ document.write("cena po rabacie: " + cena2 + "<br/>");
+ //Zadanie 8 (4 pkt)
+ //Napisz kod, który sprawdza, czy liczba jest parzysta. Użyj operatora modulo (%).
+  let liczba = 17; 
+   
+  // Napisz kod, który sprawdza parzystość i wyświetla wynik:
+  document.write("Zad.8<br/>");
+  if(liczba%2==0){
+      document.write("Liczba " + liczba + " jest parzysta <br/>");
+  }else{
+      document.write("liczba " + liczba + " nie jest parzysta <br/>");
+  }
+  //Zadanie 9 (4 pkt)
+//Napisz kod, który oblicza pole prostokąta. Użyj const dla długości i szerokości.
+document.write("Zad.9<br/>");
+const dlugosc = 5; 
+const szerokosc = 6; 
+let pole = szerokosc * dlugosc; 
+  document.write("Pole prostokąta o długości " + dlugosc + " i szerokości " + szerokosc + " wyniesie " + pole + "<br/>"); 
+  //Zadanie 10 (4 pkt)
+//Napisz kod używający operatorów inkrementacji (++), aby utworzyć sekwencję liczb:
+//●	Utwórz zmienną 'licznik' z wartością 5
+//●	Zwiększ ją o 1 (użyj ++)
+//●	Wyświetl wartość
+//●	Zwiększ jeszcze raz i wyświetl
+//●	Zmniejsz o 1 (użyj --) i wyświetl
+ // Napisz kod tutaj: 
+ document.write("Zad.10<br/>");
+let licznik=5;
+licznik++;
+document.write(licznik + "<br/>");
+licznik++;
+document.write(licznik + "<br/>");
+licznik--;
+document.write(licznik + "<br/>");
+//Zadanie 11 (6 pkt) – Kalkulator czasu
+//Napisz program, który konwertuje sekundy na minuty i sekundy:
+//●	Utwórz stałą lub zmienną z liczbą sekund (np. 135)
+//●	Oblicz ile to minut (użyj Math.floor() lub dzielenie całkowite)
+//●	Oblicz pozostałe sekundy (użyj operatora modulo %)
+//●	Wyświetl wynik w formacie: '135 sekund to 2 minuty i 15 sekund'
+ // Napisz kod tutaj: 
+ document.write("Zad.11<br/>");
+let seconds=60;
+let minutes=seconds/60;
+let spareseconds= seconds%(60*minutes);
+document.write(seconds + " sekund to " + minutes + " minut i " + spareseconds + " sekund");
+    </script>
+</body>
+</html>
