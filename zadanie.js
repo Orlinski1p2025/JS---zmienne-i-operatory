@@ -1,0 +1,23 @@
+//Zadanie 7 (4 pkt)
+//Napisz kod, który:
+//●	Tworzy zmienną 'cena' z wartością 100
+//●	Tworzy stałą 'RABAT' z wartością 0.15 (15%)
+//●	Oblicza cenę po rabacie (cena - cena * RABAT)
+//●	Wyświetla cenę przed i po rabacie używając template literals
+ // Napisz kod tutaj: 
+ let cena= 100;
+ const RABAT=0.15;
+ document.write(cena);
+ let cena2=cena - cena * RABAT;
+ document.write(cena2);
+ //Zadanie 8 (4 pkt)
+ //Napisz kod, który sprawdza, czy liczba jest parzysta. Użyj operatora modulo (%).
+  let liczba = 17; 
+   
+  // Napisz kod, który sprawdza parzystość i wyświetla wynik:
+  if(liczba%2==0){
+      document.write("Liczba jest parzysta")
+  }else{
+      document.write("liczba nie jest parzysta")
+  }
+ 
